@@ -22,8 +22,8 @@ module FineAssets
     },
 
     'slick' => {
-      'slick.js' => 'javascripts/slick.js',
-      'slick.css' => 'stylesheets/slick.css'
+      'slick/slick.js' => 'javascripts/slick.js',
+      'slick/slick.css' => 'stylesheets/slick.css'
     },
 
     'svg4everybody' => {

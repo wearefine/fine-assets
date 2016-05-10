@@ -1,3 +1,5 @@
+require 'rails'
+
 module FineAssets
   class Submodule
     def initialize(name)
@@ -22,7 +24,7 @@ module FineAssets
       files = FineAssets::SOURCES[@name]
       files.each do |old_file, new_file|
         old_path = File.join(FineAssets.root, 'submodules', @name, old_file)
-        new_path = File.join(FineAssets.root, 'vendor', 'assets', new_file)
+        new_path = File.join(Rails.root, 'vendor', 'assets', new_file)
         FileUtils.cp_r old_path, new_path, remove_destination: true
       end
     end
