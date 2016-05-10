@@ -13,3 +13,6 @@
 [submodule "submodules/js-cookie"]
 	path = submodules/js-cookie
 	url = git@github.com:js-cookie/js-cookie.git
+[submodule "submodules/picturefill"]
+	path = submodules/picturefill
+	url = git@github.com:scottjehl/picturefill.git

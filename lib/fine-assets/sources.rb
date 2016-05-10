@@ -20,6 +20,10 @@ module FineAssets
 
     'js-cookie' => {
       'js-cookie/src/js.cookie.js' => 'javascripts/js.cookie.js'
+    },
+
+    'picturefill' => {
+      'picturefill/dist/picturefill.js' => 'javascripts/picturefill.js'
     }
   }
 end

@@ -27,6 +27,7 @@ $ rake fine_assets:update
 | [fine-forever](https://github.com/wearefine/fine-forever) | `//= require fine-forever` | |
 | [slick](https://github.com/kenwheeler/slick/) | `//= require slick` | `/*= require slick */` |
 | [js-cookie](https://github.com/js-cookie/js-cookie) | `//= require js.cookie` | |
+| [picturefill](https://github.com/scottjehl/picturefill) | `//= require picturefill` | |
 
 
 ## Updating
