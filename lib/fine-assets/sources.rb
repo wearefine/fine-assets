@@ -7,6 +7,10 @@ module FineAssets
 
     'fryr' => {
       'fryr.js' => 'javascripts/fryr.js'
+    },
+
+    'fine-forever' => {
+      'fine-forever.js' => 'javascripts/fine-forever.js'
     }
   }
 end

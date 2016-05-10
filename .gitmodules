@@ -4,3 +4,6 @@
 [submodule "submodules/fryr"]
 	path = submodules/fryr
 	url = git@github.com:wearefine/fryr.git
+[submodule "submodules/fine-forever"]
+	path = submodules/fine-forever
+	url = git@github.com:wearefine/fine-forever.git
