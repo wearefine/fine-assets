@@ -20,12 +20,13 @@ $ rake fine_assets:update
 
 ## Supported Libraries
 
-| Name | JavaScript | SCSS |
+| Name | JavaScript | SCSS/CSS |
 |---|---|---|
 | [frob-core](https://github.com/wearefine/frob-core) | `//= require frob_core_helpers` | `@import 'finescss/fine'` |
 | [fryr](https://github.com/wearefine/fryr) | `//= require fryr` | |
 | [fine-forever](https://github.com/wearefine/fine-forever) | `//= require fine-forever` | |
 | [slick](https://github.com/kenwheeler/slick/) | `//= require slick` | `/*= require slick */` |
+| [js-cookie](https://github.com/js-cookie/js-cookie) | `//= require js.cookie` | |
 
 
 ## Updating

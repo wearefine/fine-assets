@@ -10,3 +10,6 @@
 [submodule "submodules/slick"]
 	path = submodules/slick
 	url = git@github.com:kenwheeler/slick.git
+[submodule "submodules/js-cookie"]
+	path = submodules/js-cookie
+	url = git@github.com:js-cookie/js-cookie.git

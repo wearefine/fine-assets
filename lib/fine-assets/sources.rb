@@ -16,6 +16,10 @@ module FineAssets
     'slick' => {
       'slick/slick.js' => 'javascripts/slick.js',
       'slick/slick.css' => 'stylesheets/slick.css'
+    },
+
+    'js-cookie' => {
+      'js-cookie/src/js.cookie.js' => 'javascripts/js.cookie.js'
     }
   }
 end
