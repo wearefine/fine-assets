@@ -7,3 +7,6 @@
 [submodule "submodules/fine-forever"]
 	path = submodules/fine-forever
 	url = git@github.com:wearefine/fine-forever.git
+[submodule "submodules/slick"]
+	path = submodules/slick
+	url = git@github.com:kenwheeler/slick.git

@@ -11,6 +11,11 @@ module FineAssets
 
     'fine-forever' => {
       'fine-forever.js' => 'javascripts/fine-forever.js'
+    },
+
+    'slick' => {
+      'slick/slick.js' => 'javascripts/slick.js',
+      'slick/slick.css' => 'stylesheets/slick.css'
     }
   }
 end
