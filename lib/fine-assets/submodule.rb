@@ -40,13 +40,5 @@ module FineAssets
       end
     end
 
-
-    private
-
-      # Verify that remote exists
-      def check_origin
-        cmd = `if git config remote.#{@name}.url > /dev/null; then echo "true"; else echo "false"; fi`
-        cmd.include? "true"
-      end
   end
 end
