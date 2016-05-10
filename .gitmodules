@@ -1,3 +1,6 @@
 [submodule "submodules/frob-core"]
 	path = submodules/frob-core
 	url = git@github.com:wearefine/frob-core.git
+[submodule "submodules/fryr"]
+	path = submodules/fryr
+	url = git@github.com:wearefine/fryr.git

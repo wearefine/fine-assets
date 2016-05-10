@@ -27,7 +27,13 @@ Require the libraries as usual:
 ```javascript
 // application.js
 //= require frob_core_helpers
+```
 
+## SCSS
+
+```scss
+@import 'finescss/fine'
+```
 
 ## Updating
 
@@ -45,6 +51,8 @@ $ rake fine_assets:update asset=frob-core
 
 ## Supported Libraries
 
-* [frob-core](https://github.com/wearefine/frob-core)
-* [fryr](https://github.com/wearefine/fryr)
-* [fine-forever](https://github.com/wearefine/fine-forever)
+| Name | JavaScript | SCSS |
+|---|---|---|
+| [frob-core](https://github.com/wearefine/frob-core) | `//= require frob_core_helpers` | `@import 'finescss/fine'` |
+| [fryr](https://github.com/wearefine/fryr) | `//= require fryr` | |
+| [fine-forever](https://github.com/wearefine/fine-forever) | `//= require fine-forever` | |
