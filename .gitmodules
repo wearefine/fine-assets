@@ -16,3 +16,6 @@
 [submodule "submodules/picturefill"]
 	path = submodules/picturefill
 	url = git@github.com:scottjehl/picturefill.git
+[submodule "submodules/svg4everybody"]
+	path = submodules/svg4everybody
+	url = git@github.com:jonathantneal/svg4everybody.git
