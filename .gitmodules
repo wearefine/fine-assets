@@ -1,0 +1,3 @@
+[submodule "submodules/frob-core"]
+	path = submodules/frob-core
+	url = git@github.com:wearefine/frob-core.git
