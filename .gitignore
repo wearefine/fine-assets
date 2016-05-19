@@ -20,7 +20,4 @@ tmp
 *.o
 *.a
 mkmf.log
-vendor/assets/stylesheets/*
-vendor/assets/javascripts/*
-!vendor/assets/stylesheets/.keep
-!vendor/assets/javascripts/.keep
+.rvmrc

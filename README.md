@@ -10,14 +10,6 @@ Bundle the gem:
 gem 'fine-assets', github: 'wearefine/fine-assets'
 ```
 
-And then expand the submodules:
-
-```ruby
-$ rake fine_assets:update
-```
-
-*TODO: This task should be automated and run after post install*
-
 ## Supported Libraries
 
 | Name | JavaScript | SCSS/CSS |
@@ -31,16 +23,26 @@ $ rake fine_assets:update
 | [svg4everybody](https://github.com/jonathantneal/svg4everybody) | `//= require svg4everybody` | |
 
 
-## Updating
+## Development/Updating
 
 To update all libraries to the latest and greatest, run
 
+### `update`
+
 ```
-$ rake fine_assets:update
+$ rake update
 ```
 
 To update a specific library, add an asset argument: 
 
 ```
-$ rake fine_assets:update asset=frob-core
+$ rake update asset=frob-core
+```
+
+### `commit`
+
+Libraries can be automatically committed after updating. The task checks against the last time the submodule(s) updated and adds a commit with an automatic message per submodule(s) if there's been a change. The `commit` task accepts an asset argument like `update`.
+
+```
+$ rake commit
 ```
