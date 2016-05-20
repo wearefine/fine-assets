@@ -13,7 +13,6 @@ task :update, [:asset] do |t, args|
     subtree.update
     subtree.copy_files
   end
-
 end
 
 desc 'Add commit message after updating submodules'
