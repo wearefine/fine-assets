@@ -1,7 +1,6 @@
 require 'fine-assets/version'
 require 'fine-assets/sources'
 require 'fine-assets/submodule'
-require 'fine-assets/tasks'
 require 'fine-assets/engine'
 
 module FineAssets
