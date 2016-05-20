@@ -25,9 +25,9 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 
 ## Development/Updating
 
-To update all libraries to the latest and greatest, run
-
 ### `update`
+
+To update all libraries to the latest and greatest, run
 
 ```
 $ rake update
