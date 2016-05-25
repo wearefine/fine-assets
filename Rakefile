@@ -27,7 +27,7 @@ task :commit, [:asset] do |t, args|
 
   FineAssets::SOURCES.each do |name, files|
     # CAPTURE commit hash (alphanumeric) + space + "submodules" + / + name of library + space + (branch name, could include alphanumeric, period, forward slash and dash)
-    reg = /(\w+)\ssubmodules\/#{name}\s\([\w.\-\/]+\)/
+    reg = /\+?(\w+)\ssubmodules\/#{name}\s\([\w.\-\/]+\)/
     last_sha = reg.match(last_commit)
     current_sha = reg.match(current_submodule_commits)
 
@@ -42,7 +42,7 @@ task :commit, [:asset] do |t, args|
       puts 'Nothing to commit'
     else
       # Only add pertinent submodule information (by way of grep)
-      `git commit -am "Automated: Update libraries #{updated_sources.join(', ')} \n $(git submodule | grep '#{updated_sources.join('|')}')"`
+      `git commit -am "Automated: Update libraries #{updated_sources.join(', ')} \n $(git submodule | grep '#{updated_sources.join('\|')}')"`
       puts 'Commit generated; don\'t forget to push'
     end
   else
