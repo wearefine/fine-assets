@@ -17,6 +17,10 @@ module FineAssets
       'src/js.cookie.js' => 'javascripts/js.cookie.js'
     },
 
+    'normalize' => {
+      'normalize.css' => 'stylesheets/normalize.css'
+    },
+
     'picturefill' => {
       'dist/picturefill.js' => 'javascripts/picturefill.js'
     },

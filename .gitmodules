@@ -19,3 +19,6 @@
 [submodule "submodules/svg4everybody"]
 	path = submodules/svg4everybody
 	url = git@github.com:jonathantneal/svg4everybody.git
+[submodule "submodules/normalize"]
+	path = submodules/normalize
+	url = git@github.com:necolas/normalize.css.git

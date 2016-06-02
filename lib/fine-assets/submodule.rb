@@ -10,10 +10,10 @@ module FineAssets
       end
     end
 
-    # Update all submodules
+    # Update specific submodule
     def update
       Dir.chdir FineAssets.root do
-        `git submodule update --remote --merge`
+        `git submodule update --remote --merge submodules/#{@name}`
       end
     end
 
@@ -34,9 +34,9 @@ module FineAssets
       end
 
       FineAssets::SOURCES.each do |name, files|
-        subtree = new(name)
-        subtree.update
-        subtree.copy_files
+        submod = new(name)
+        submod.update
+        submod.copy_files
       end
     end
 
