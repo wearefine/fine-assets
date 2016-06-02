@@ -42,12 +42,12 @@ task :commit, [:asset, :first_time] do |t, args|
       puts 'Nothing to commit'
     else
       # Only add pertinent submodule information (by way of grep)
-      `git commit -am "Automated: Update libraries #{updated_sources.join(', ')} \n $(git submodule | grep '#{updated_sources.join('\|')}')"`
+      `git add . && git commit -m "Automated: Update libraries #{updated_sources.join(', ')} \n $(git submodule | grep '#{updated_sources.join('\|')}')"`
       puts 'Commit generated; don\'t forget to push'
     end
   else
     if updated_sources.include?(args[:asset]) || args[:first_time]
-      `git commit -am "Automated: Update #{args[:asset]} \n $(git submodule | grep '#{args[:asset]}')"`
+      `git add . && git commit -m "Automated: Update #{args[:asset]} \n $(git submodule | grep '#{args[:asset]}')"`
       puts 'Commit generated; don\'t forget to push'
     else
       puts 'Nothing to commit'

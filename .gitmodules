@@ -22,3 +22,6 @@
 [submodule "submodules/normalize"]
 	path = submodules/normalize
 	url = git@github.com:necolas/normalize.css.git
+[submodule "submodules/lazysizes"]
+	path = submodules/lazysizes
+	url = git@github.com:aFarkas/lazysizes.git

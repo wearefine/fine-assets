@@ -18,6 +18,7 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 | [frob-core](https://github.com/wearefine/frob-core) | `//= require frob_core_helpers` | `@import 'finescss/fine'` |
 | [fryr](https://github.com/wearefine/fryr) | `//= require fryr` | |
 | [js-cookie](https://github.com/js-cookie/js-cookie) | `//= require js.cookie` | |
+| [lazysizes](https://github.com/aFarkas/lazysizes) | `//= require lazysizes` | |
 | [normalize](https://github.com/necolas/normalize.css/) | | `/*= require normalize */` |
 | [picturefill](https://github.com/scottjehl/picturefill) | `//= require picturefill` | |
 | [slick](https://github.com/kenwheeler/slick/) | `//= require slick` | `/*= require slick */` |

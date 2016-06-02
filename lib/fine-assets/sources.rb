@@ -17,6 +17,10 @@ module FineAssets
       'src/js.cookie.js' => 'javascripts/js.cookie.js'
     },
 
+    'lazysizes' => {
+      'lazysizes.js' => 'javascripts/lazysizes.js'
+    },
+
     'normalize' => {
       'normalize.css' => 'stylesheets/normalize.css'
     },
