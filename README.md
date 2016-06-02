@@ -27,11 +27,11 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 
 ### Adding a new library
 
-1. Run `git submodule add <.git REPO> submodules/<REPONAME>`. For example, `git submodule add git@github.com:necolas/normalize.css.git submodules/normalize`
-2. Specify what files are necessary and how they can be referenced in `lib/fine-assets/sources.rb`
-3. Document the new library in this `README.md`
+1. Run `git submodule add <.git_REPO_URL> submodules/<REPONAME>`. For example, `git submodule add git@github.com:necolas/normalize.css.git submodules/normalize`.
+2. Specify what files are necessary and how they can be referenced in `lib/fine-assets/sources.rb`.
+3. Document the new library in this `README`.
 4. Run `rake update[<REPONAME>]` to include the necessary files.
-4. Commit the new submodule and file(s). Then run `rake commit[<REPONAME>]` to generate a marker for future updates.
+5. Generate a first-time commit marker using `rake commit[<REPONAME>,true]`.
 
 ### `rake update`
 
@@ -53,4 +53,10 @@ Libraries can be automatically committed after updating. The task checks against
 
 ```
 $ rake commit
+```
+
+When adding a library, be sure to include a truthy second argument to generate the marker:
+
+```
+$ rake commit[frob-core,true]
 ```

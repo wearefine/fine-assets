@@ -4,7 +4,7 @@ require 'fine-assets'
 
 desc 'Update all sources or update a specific source using the asset= argument'
 task :update, [:asset] do |t, args|
-  args.with_defaults(:asset => false)
+  args.with_defaults(asset: false)
 
   if args[:asset].blank?
     FineAssets::Submodule.update_all
@@ -16,8 +16,8 @@ task :update, [:asset] do |t, args|
 end
 
 desc 'Add commit message after updating submodules'
-task :commit, [:asset] do |t, args|
-  args.with_defaults(:asset => false)
+task :commit, [:asset, :first_time] do |t, args|
+  args.with_defaults(asset: false, first_time: false)
 
   # Retrieve last automated, generated commit
   last_commit = `git log --oneline --grep='Automated: Update' -1`
@@ -46,7 +46,7 @@ task :commit, [:asset] do |t, args|
       puts 'Commit generated; don\'t forget to push'
     end
   else
-    if updated_sources.include? args[:asset]
+    if updated_sources.include?(args[:asset]) || args[:first_time]
       `git commit -am "Automated: Update #{args[:asset]} \n $(git submodule | grep '#{args[:asset]}')"`
       puts 'Commit generated; don\'t forget to push'
     else
