@@ -20,7 +20,7 @@ task :commit, [:asset, :first_time] do |t, args|
   args.with_defaults(asset: false, first_time: false)
 
   # Retrieve last automated, generated commit
-  last_commit = `git log --oneline --grep='Automated: Update' -1`
+  last_commit = `git log --oneline --grep='Automated: Update'`
   # Current git submodules
   current_submodule_commits = `git submodule`
   updated_sources = []

@@ -33,6 +33,14 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 4. Run `rake update[<REPONAME>]` to include the necessary files.
 5. Generate a first-time commit marker using `rake commit[<REPONAME>,true]`.
 
+### Updating existing libraries
+
+To update all libraries to their latest release and generate a commit message, run
+
+```
+$ rake update && rake commit
+```
+
 ### `rake update`
 
 To update all libraries to the latest and greatest, run
