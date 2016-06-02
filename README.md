@@ -40,9 +40,9 @@ To update all libraries to their latest release and to generate a commit, run
 $ rake update && rake commit
 ```
 
-*These tasks are explained in full below, but in most cases the above command is sufficient*
+*These tasks are explained in full below, but in most cases the above command is sufficient.*
 
-### `rake update`
+#### `rake update`
 
 To update all libraries to the latest and greatest, run
 
@@ -56,7 +56,7 @@ To update a specific library, add the asset name as the first argument:
 $ rake update[frob-core]
 ```
 
-### `rake commit`
+#### `rake commit`
 
 Libraries can be automatically committed after updating. The task checks against the last time the submodule(s) updated and adds a commit with an automatic message per submodule(s) if there's been a change. The `commit` task accepts an asset argument like `update`.
 
