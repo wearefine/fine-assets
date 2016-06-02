@@ -24,9 +24,7 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 | [slick](https://github.com/kenwheeler/slick/) | `//= require slick` | `/*= require slick */` |
 | [svg4everybody](https://github.com/jonathantneal/svg4everybody) | `//= require svg4everybody` | |
 
-## Development/Updating
-
-### Adding a new library
+## Adding a new library
 
 1. Run `git submodule add <.git_REPO_URL> submodules/<REPONAME>`. For example, `git submodule add git@github.com:necolas/normalize.css.git submodules/normalize`.
 2. Specify what files are necessary and how they can be referenced in `lib/fine-assets/sources.rb`.
@@ -34,13 +32,15 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 4. Run `rake update[<REPONAME>]` to include the necessary files.
 5. Generate a first-time commit marker using `rake commit[<REPONAME>,true]`.
 
-### Updating existing libraries
+## Updating existing libraries
 
-To update all libraries to their latest release and generate a commit message, run
+To update all libraries to their latest release and to generate a commit, run
 
 ```
 $ rake update && rake commit
 ```
+
+*These tasks are explained in full below, but in most cases the above command is sufficient*
 
 ### `rake update`
 
