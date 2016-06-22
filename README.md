@@ -19,6 +19,7 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 | [fryr](https://github.com/wearefine/fryr) | `//= require fryr` | |
 | [js-cookie](https://github.com/js-cookie/js-cookie) | `//= require js.cookie` | |
 | [lazysizes](https://github.com/aFarkas/lazysizes) | `//= require lazysizes` | |
+| [magnific](https://github.com/dimsemenov/Magnific-Popup) | `//= require jquery.magnific-popup.js` | `/*= require magnific-popup */` |
 | [normalize](https://github.com/necolas/normalize.css/) | | `/*= require normalize */` |
 | [picturefill](https://github.com/scottjehl/picturefill) | `//= require picturefill` | |
 | [reset](http://meyerweb.com/eric/tools/css/reset/) | | `/*= require reset */` (not a submodule, not updatable) |

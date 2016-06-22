@@ -21,6 +21,11 @@ module FineAssets
       'lazysizes.js' => 'javascripts/lazysizes.js'
     },
 
+    'magnific' => {
+      'dist/jquery.magnific-popup.js' => 'javascripts/jquery.magnific-popup.js',
+      'dist/magnific-popup.css' => 'stylesheets/magnific-popup.css'
+    },
+
     'normalize' => {
       'normalize.css' => 'stylesheets/normalize.css'
     },

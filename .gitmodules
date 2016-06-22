@@ -25,3 +25,6 @@
 [submodule "submodules/lazysizes"]
 	path = submodules/lazysizes
 	url = git@github.com:aFarkas/lazysizes.git
+[submodule "submodules/magnific"]
+	path = submodules/magnific
+	url = git@github.com:dimsemenov/Magnific-Popup.git
