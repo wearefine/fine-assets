@@ -21,6 +21,7 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 | [lazysizes](https://github.com/aFarkas/lazysizes) | `//= require lazysizes` | |
 | [normalize](https://github.com/necolas/normalize.css/) | | `/*= require normalize */` |
 | [picturefill](https://github.com/scottjehl/picturefill) | `//= require picturefill` | |
+| [reset](http://meyerweb.com/eric/tools/css/reset/) | | `/*= require reset */` (not a submodule, not updatable) |
 | [slick](https://github.com/kenwheeler/slick/) | `//= require slick` | `/*= require slick */` |
 | [svg4everybody](https://github.com/jonathantneal/svg4everybody) | `//= require svg4everybody` | |
 
