@@ -6,7 +6,7 @@ module FineAssets
 
     'frob-core' => {
       'source/javascripts/frob_core_helpers.js' => 'javascripts/frob_core_helpers.js',
-      'source/stylesheets/globals/imports/finescss' => 'stylesheets'
+      'source/stylesheets/finescss' => 'stylesheets'
     },
 
     'fryr' => {
