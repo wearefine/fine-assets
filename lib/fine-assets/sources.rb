@@ -6,7 +6,11 @@ module FineAssets
 
     'frob-core' => {
       'source/javascripts/frob_core_helpers.js' => 'javascripts/frob_core_helpers.js',
-      'source/stylesheets/finescss' => 'stylesheets'
+      'source/stylesheets/finescss' => 'stylesheets',
+      'source/plugins/fcSuggest.js' => 'javascripts/fcSuggest.js',
+      'source/plugins/fcsuggest.scss' => 'stylesheets/fcsuggest.scss',
+      'source/plugins/fcDropdown.js' => 'javascripts/fcDropdown.js',
+      'source/plugins/fcdropdown.scss'=> 'stylesheets/fcdropdown.scss'
     },
 
     'fryr' => {

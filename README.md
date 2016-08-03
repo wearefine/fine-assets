@@ -16,6 +16,8 @@ gem 'fine-assets', github: 'wearefine/fine-assets'
 |---|---|---|
 | [fine-forever](https://github.com/wearefine/fine-forever) | `//= require fine-forever` | |
 | [frob-core](https://github.com/wearefine/frob-core) | `//= require frob_core_helpers` | `@import 'finescss/fine'` |
+| [fcDropdown](https://github.com/wearefine/frob-core/blob/master/source/plugins/fcDropdown-README.md) | `//= require fcDropdown` | `@import 'fcdropdown'` or `/*= require fcdropdown */` |
+| [fcSuggest](https://github.com/wearefine/frob-core/blob/master/source/plugins/fcSuggest-README.md) | `//= require fcSuggest` | `@import 'fcsuggest'` or `/*= require fcsuggest */` |
 | [fryr](https://github.com/wearefine/fryr) | `//= require fryr` | |
 | [js-cookie](https://github.com/js-cookie/js-cookie) | `//= require js.cookie` | |
 | [lazysizes](https://github.com/aFarkas/lazysizes) | `//= require lazysizes` | |
